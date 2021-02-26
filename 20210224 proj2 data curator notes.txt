@@ -33,8 +33,12 @@ touch .gitignore
 # git status:
 git status
 
+# Update everything:
+git pull  # Does this work?
+
 # Push to git
 git add -A
+git add "your_file"
 git commit -m "My message for this commit"
 git push
 # User name: allison-nau

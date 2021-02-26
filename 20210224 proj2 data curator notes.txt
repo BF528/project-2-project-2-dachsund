@@ -1,0 +1,41 @@
+# Login to SCC:
+ssh -X anau@scc2.bu.edu
+
+# General Project info:
+cd /project/bf528/project_2
+cd /projectnb2/bf528/project_2
+
+# Our project directory:
+cd /projectnb2/bf528/users/dachshund/project_2
+
+# Make directories with full permissions:
+# Umask permission list: https://linuxize.com/post/umask-command-in-linux/
+mkdir -m777 project_2
+# Does the following need {} or now?
+mkdir -m777 data data_curator programmer analyst biologist
+# rename by mv:
+mv 
+# Remove directories:
+rmdir
+
+mv analyst /projectnb2/bf528/users/dachshund/project_2/project-2-project-2-dachsund
+
+
+# Long form listing with permissions: 
+ls -la
+
+# Link SCC to git:
+git clone https://github.com/BF528/project-2-project-2-dachsund.git
+
+# Create gitignore file:
+touch .gitignore
+
+# git status:
+git status
+
+# Push to git
+git add -A
+git commit -m "My message for this commit"
+git push
+# User name: allison-nau
+

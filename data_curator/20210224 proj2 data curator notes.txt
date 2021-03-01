@@ -7,6 +7,10 @@ cd /projectnb2/bf528/project_2
 
 # Our project directory:
 cd /projectnb2/bf528/users/dachshund/project_2
+cd /projectnb2/bf528/users/dachshund/project_2/project-2-project-2-dachsund/data_curator/
+
+# Other samples located at:
+cd /project/bf528/project_2/data/samples/
 
 # Make directories with full permissions:
 # Umask permission list: https://linuxize.com/post/umask-command-in-linux/
@@ -43,3 +47,25 @@ git commit -m "My message for this commit"
 git push
 # User name: allison-nau
 
+# Rename file:
+mv SRR1727914.sra P0_1.sra
+
+# Qsub job to convert SRA to paired FASTQ:
+qsub -P bf528 run_extract.qsub
+
+# Check status of job:
+qstat -u anau
+
+# Make SRA tools available:
+module load sratoolkit
+
+# Quality control:
+module load fastqc
+fastqc -h
+
+# fastqc [-o output directory] seqfile1 seqfile2 
+fastqc -o /projectnb2/bf528/users/dachshund/project_2/project-2-project-2-dachsund/data_curator P0_1_1.fastq P0_1_2.fastq
+
+# Copy correct files into data folder:
+cp P0_1_1.fastq /projectnb2/bf528/users/dachshund/project_2/project-2-project-2-dachsund/data
+cp P0_1_2.fastq /projectnb2/bf528/users/dachshund/project_2/project-2-project-2-dachsund/data

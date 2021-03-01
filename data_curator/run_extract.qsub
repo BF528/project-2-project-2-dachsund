@@ -1,0 +1,25 @@
+#!/bin/bash
+
+#$ -P bf528
+#$ -cwd
+#$ -j y
+#$ -pe mpi_16_tasks_per_node 16
+#$ -o run_extract.stdout
+#$ -e run_extract.stderr
+
+echo "Running job $JOB_ID"
+echo "Started: $(date +%F)"
+echo "Running in directory: $PWD"
+
+# your commands here
+vdb-config
+
+# Make SRA tools available:
+module load sratoolkit
+module load fastqc
+
+# Convert SRA to FASTQ
+# fastq-dump -I --split-files P0_1.sra -O | --outdir /projectnb2/bf528/users/dachshund/project_2/project-2-project-2-dachsund/data_curator
+fastq-dump -I --split-files P0_1.sra
+
+echo "Job finished: $(date +%F)"

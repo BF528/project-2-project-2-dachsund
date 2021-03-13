@@ -12,11 +12,11 @@ s
 
 TESTING EDIT
 
-# Contributors
-Data Curator: Allison Nau
-Programmer: Mae Rose Gott
-Analyst: Sheila Yee
-Biologist: Abhishek Thakar
+# Contributors  
+Data Curator: Allison Nau  
+Programmer: Mae Rose Gott  
+Analyst: Sheila Yee  
+Biologist: Abhishek Thakar  
 
 
 # Repository Contents

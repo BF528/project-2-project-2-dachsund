@@ -10,8 +10,6 @@ This repository contains the scripts used to process and analyze the data.
 O’Meara, C. C., Wamstad, J. A., Gladstone, R. A., Fomovsky, G. M., Butty, V. L., Shrikumar, A., Gannon, J. B., Boyer, L. A., & Lee, R. T. (2015). Transcriptional Reversion of Cardiac Myocyte Fate During Mammalian Cardiac Regeneration. Circulation Research, 116(5), 804–815. https://doi.org/10.1161/CIRCRESAHA.116.304269
 s
 
-TESTING EDIT
-
 # Contributors  
 Data Curator: Allison Nau  
 Programmer: Mae Rose Gott  

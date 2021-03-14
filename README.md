@@ -22,3 +22,9 @@ run_extract.qsub : script to unpack SRA file into FASTQ files. To submit as a qs
 
 20210224 proj2 data curator notes.txt: outlines the commands used to initially process the sample and set up the GIT repository. This is NOT a shell script, merely an outline of the command that were used in command line.
 
+library_size.py: Python script to calculate average library size for the 8 samples looked at. (Data curator).
+Will print the minimum, maximum, and average library size.
+Expects info files to be in a subdirectory "prep_reads_info" in the current working directory.
+Library size of P0_1 is loaded in by default WITHOUT an info file.
+
+

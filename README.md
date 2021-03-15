@@ -20,7 +20,7 @@ Biologist: Abhishek Thakar
 # Repository Contents
 run_extract.qsub : script to unpack SRA file into FASTQ files. To submit as a qsub, login to SCC, navigate to the appropriate folder, and enter the command “qsub -P bf528 run_extract.qsub”.
 
-20210224 proj2 data curator notes.txt: outlines the commands used to initially process the sample and set up the GIT repository. This is NOT a shell script, merely an outline of the command that were used in command line.
+20210224 proj2 data curator notes.txt: outlines the commands used to initially process the sample and set up the GIT repository. This is NOT a shell script, merely an outline of the commands that were used in command line.
 
 library_size.py: Python script to calculate average library size for the 8 samples looked at. (Data curator).
 Will print the minimum, maximum, and average library size.

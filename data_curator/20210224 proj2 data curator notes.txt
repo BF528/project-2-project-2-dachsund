@@ -1,3 +1,6 @@
+# This is a list of commands to run in command line, NOT A SHELL SCRIPT!!!!
+# Allison Nau
+
 # Login to SCC:
 ssh -X anau@scc2.bu.edu
 

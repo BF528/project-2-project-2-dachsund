@@ -33,3 +33,11 @@ Library size of P0_1 is loaded in by default WITHOUT an info file.
 
 **heatmaptop100DEgenes.R**: heatmap of top 100 differentially expressed genes compared between 8 samples, one of which generated through cuffdiff 
 
+**run_tophat.qsub** runs aligns reads using samtools bowtie2 boost and tophat and outputs the accepted hits
+
+**run_cuffdiff.qsub** Identifies differentially expressed genes taking in several bam files. Uses cufflinks
+
+**run_cufflinks.qsub** Finds FPKM values on a bam file of accepted hits. Uses cufflinks to run 
+
+**rseqc_metrics.qsub** script to run geneBody_coverage.py, inner_distance.py, and bam_stat on an indexed bam file of the accepted hits. Outputs two pdfs and a text file on the read stats
+

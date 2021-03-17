@@ -27,4 +27,7 @@ Will print the minimum, maximum, and average library size.
 Expects info files to be in a subdirectory "prep_reads_info" in the current working directory.
 Library size of P0_1 is loaded in by default WITHOUT an info file.
 
+FPKMPlot.R: Rscript to create fpkm plots for sarcomere, mitochondria, cell cycle genes identified through Figure 1D of paper
+
+heatmaptop100DEgenes.R: heatmap of top 100 differentially expressed genes compared between 8 samples, one of which generated through cuffdiff
 

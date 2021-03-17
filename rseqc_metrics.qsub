@@ -1,0 +1,15 @@
+#!/bin/bash -l
+
+#$ -P bf528
+#$ -cwd
+
+#Module loading
+module load R
+module load python3
+module load samtools
+module load rseqc
+
+#commands to run
+geneBody_coverage.py -r /project/bf528/project_2/reference/annot/mm9.bed -i accepted_hits.bam -o hits_gB
+inner_distance.py -r /project/bf528/project_2/reference/annot/mm9.bed -i accepted_hits.bam -o hits_id
+bam_stat.py -i accepted_hits.bam

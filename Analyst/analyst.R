@@ -42,7 +42,7 @@ dif_expr_sig_neg <-subset(dif_expr_sig,log2.fold_change. < 0 )
 dim(dif_expr_sig_pos) # find out how many genes with positive log fold change
 dim(dif_expr_sig_neg) # find out how many genes with negative log fold change
 
-# write the up and down regulated gene names to separate different files
+# write the up and down regulated gene names to separate files
 up_regulated_genes <- write.csv(dif_expr_sig_pos$gene, "up_regulated_genes.csv")
 down_regulated_genes <- write.csv(dif_expr_sig_neg$gene, "down_regulated_genes.csv")
  

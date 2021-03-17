@@ -41,3 +41,5 @@ Library size of P0_1 is loaded in by default WITHOUT an info file.
 
 **rseqc_metrics.qsub** script to run geneBody_coverage.py, inner_distance.py, and bam_stat on an indexed bam file of the accepted hits. Outputs two pdfs and a text file on the read stats
 
+**cufflink_histogram.R** RStudio file that creates the density histograms of the FPKM values
+
